@@ -11,7 +11,6 @@ export default async function UsersLayout({
 
     const users =await  getsUsers()
     return (
-        // @ts-expect-error Serer Components
         <Sidebar>
             <div className="h-full">
              <UserList items={users} />
